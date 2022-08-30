@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+}
+.face {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 400px;
+    background: #f8ddce;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-shadow: inset 5px -5px 10px #00000049;
+}
+
+.eyes {
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-shadow: 1px 1px 5px #00000049;
+}
+
+.eyes:after {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    content: "";
+    top: -24px;
+    left: -10px;
+    animation: shake 0.1s infinite ease-in-out alternate;
+}
+
+.eyes:before {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    content: "";
+    animation: shake 0.1s infinite ease-in-out alternate;
+}
+
+@keyframes shake {
+    to {
+        transform: translateX(-1px);
+    }
+    from {
+        transform: translateX(1px);
+    }
+}
+
+.mouth {
+    width: 180px;
+    height: 50px;
+    bottom: 200px;
+    position: absolute;
+    background: #000000;
+    border-radius: 100%;
+    border: 2px solid #000000;
+    box-shadow: 1px 1px 5px #00000049; 
+    overflow: hidden;
+}
+
+.teth {
+    width: 25px;
+    height: 30px;
+    top: -17px;
+    left: 75px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.r { 
+    top: -15px;
+    left: 20px;
+}
+
+.l { 
+    top: -15px;
+    left: 130px;
+}
+
+.tongue {
+    width: 100px;
+    height: 50px;
+    left: 40px;
+    bottom: -30px;
+    position: absolute;
+    background: #ea6e74;
+    border-radius: 50%;
+}
