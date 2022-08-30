@@ -17,7 +17,7 @@ Projeto desenvolvido para o aprendizado aprofundado em HTML5 e CSS3(e suas anima
 
 <p align="center">Finn - Hora de Aventura</p>
 <p align="center">
-    <img alt="Finn" title="Finn - Hora de Aventura" src="" />
+    <img alt="Finn" title="Finn - Hora de Aventura" src="https://raw.githubusercontent.com/Polaris851/Drawing-in-css/main/finn.gif" />
 </p>
 
 ## Tecnologias utilizadas
