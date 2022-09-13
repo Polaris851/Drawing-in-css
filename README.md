@@ -15,9 +15,19 @@ Projeto desenvolvido para o aprendizado aprofundado em HTML5 e CSS3(e suas anima
 
 ##  Desenhos
 
-<p align="center">Finn - Hora de Aventura</p>
+<h3 align="center">Finn - Hora de Aventura</h3>
 <p align="center">
     <img alt="Finn" title="Finn - Hora de Aventura" src="https://raw.githubusercontent.com/Polaris851/Drawing-in-css/main/finn.gif" />
+</p>
+
+<h3 align="center">Jake - Hora de Aventura</h3>
+<p align="center">
+    <img alt="Jake" title="Jake - Hora de Aventura" src="" />
+</p>
+
+<h3 align="center">Lindinha - Meninas Super Poderosas</h3>
+<p align="center">
+    <img alt="Lindinha" title="Lindinha - Meninas Super Poderosas" src="" />
 </p>
 
 ## Tecnologias utilizadas
