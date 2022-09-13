@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+
+    background: #f5bf3f;
+}
+
+.jake {
+    padding: 100px;
+}
+
+.face {
+    position: relative;
+
+    display: flex;
+
+    width: 500px;
+    
+    justify-content: space-around;
+}
+
+.eyes {
+    width: 150px;
+    height: 150px;
+
+    position: relative;
+
+    background: #000;
+
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #00000049;
+}
+
+.eyes:after {
+    width: 80px;
+    height: 80px;
+    top: 15px;
+    right: 13px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    position: absolute;
+
+    content: "";
+
+    animation: shake 0.1s infinite ease-in-out alternate;
+}
+
+.eyes:before {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    left: 30px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    position: absolute;
+
+    content: "";
+
+    animation: shake 0.1s infinite ease-in-out alternate;
+}
+
+@keyframes shake {
+    to {
+        transform: translateX(-1px);
+    }
+    from {
+        transform: translateX(1px);
+    }
+}
+
+.cheek {
+    width: 150px;
+    height: 50px;
+    top: 120px;
+
+    position: absolute;
+
+    background: #f5bf3f;
+
+    border-radius: 100%;
+    border-top: 4px solid #000;
+    box-shadow: inset 0 2px 2px #00000049; 
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.mustache {
+    width: 180px;
+    height: 180px;
+    top: 65px;
+
+    background: linear-gradient(to bottom, #f5bf3f 50%, rgba(0,0,0,0) 50%);
+
+    position: absolute;
+
+    border: 4px solid #000;
+    border-bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.mustache-cut {
+    width: 180px;
+    height: 100px;    
+    bottom: -10px;
+    left:-5px;
+
+    position: absolute;
+
+    z-index: 1;
+
+    border-left: 6px solid #f5bf3f;
+    border-right: 6px solid #f5bf3f;
+}
+
+.mustache-cut:after {
+    width: 60px;
+    height: 50px;
+    right: -4px;
+    bottom: 50px;
+
+    position: absolute;
+
+    background: #f5bf3f;
+    
+    border: 4px solid #000;
+    border-top: 0;
+    border-radius:  0 0 50% 50%;
+
+    z-index: 2;
+
+    content: "";
+
+}
+
+.mustache-cut:before {
+    width: 60px;
+    height: 50px;
+    left: -4px;
+    bottom: 50px;
+
+    position: absolute;
+
+    background: #f5bf3f;
+
+    border: 4px solid #000;
+    border-top: 0;
+    border-radius: 0 0 50% 50%;
+
+    z-index: 2;
+    
+    content: "";
+
+}
+
+.nose {
+    width: 90px;
+    height: 55px;
+    top: 38px;
+    left: 45px;
+
+    position: absolute;
+
+    background: #000;
+
+    border-radius: 45%;
+
+    z-index: 3;
+}
+
+.mouth {
+    width: 100px;
+    height: 80px;
+    bottom: 50px; 
+    left: 40px;
+
+    position: absolute;
+
+    background: #862328;
+
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-shadow: 1px 1px 5px #0000005c; 
+
+    z-index: -1;
+    
+    overflow: hidden;
+}
+
+.teth {
+    width: 20px;
+    height: 20px;
+    bottom: 20px;
+    right: 40px;
+
+    position: absolute;
+
+    background: #fff;
+
+    border-radius: 45%;
+    border: 2px solid #000;
+    z-index: 1;
+}
+
+.r { 
+    left: 18px;
+}
+
+.l { 
+    right: 20px;
+}
+
+.tongue {
+    width: 100px;
+    height: 50px;
+    left: 40px;
+    bottom: -30px;
+
+    position: absolute;
+
+    background: #ea6e74;
+
+    border-radius: 50%;
+}
+
+.arms {
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.arm {
+    height: 200px;
+    width: 95px;
+
+    display: flex;
+
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+
+    animation: hands-up 1s infinite ease-in-out alternate;
+}
+
+.finger {
+    width: 30px;
+    height: 30px;
+
+    margin-top: -30px;
+    margin-left: -4px;
+
+    border: 4px solid #000;
+    border-bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.fright {
+    margin-left: -2px;
+    margin-right: -4px;
+}
+
+@keyframes hands-up {
+    to {
+        transform: translateY(-10px);
+    }
+    from {
+        transform: translateY(10px);
+    }
+}
